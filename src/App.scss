@@ -1,0 +1,134 @@
+/* ---- reset ---- */
+body {
+     margin: 0;
+     font-family: 'Exo 2', sans-serif;
+}
+
+
+canvas {
+     display: block;
+     vertical-align: bottom;
+}
+
+/* ---- tsparticles container ---- */
+#tsparticles {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background-color: #000000;
+     z-index: 1;
+     background: reba(255, 255, 255);
+     background-size: cover;
+}
+ 
+.container {
+     display: flex;
+     height: 100vh;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     input {
+          padding: 20px 30px;
+          width: 300px;
+          border-radius: 9999999px;
+          box-shadow: 2px 2px 50px rgb(61, 207, 243);
+          z-index: 2;
+          font-family: 'Exo 2', sans-serif;
+
+          &:focus {
+               outline: none;
+          }
+     }
+
+     .card,.error {
+          background: rgb(253, 233, 233);
+          width: 600px;
+          margin-top: 10px;
+          padding: 25px;
+          border-radius: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          overflow: auto;
+          max-height: 80vh;
+          z-index: 2;
+
+          &::-webkit-scrollbar {
+               width: .8em;
+          }
+
+          &::-webkit-scrollbar-track {
+               box-shadow: inset 0 0 6px rgb(253, 233, 233);
+               border-radius: 20px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+               background-color: #0087ca;
+               outline: none;
+               border-radius: 20px;
+          }
+
+          span,
+          p {
+               font-size: 1.2rem;
+          }
+
+          .word {
+               font-size: 2rem;
+               display: inline-block;
+               position: relative;
+               color: #0087ca;
+               text-decoration: underline;
+               text-decoration-style: wavy;
+               text-decoration-style: 15px;
+          }
+
+          .info {
+               display: flex;
+               flex-direction: column;
+               line-height: 20px;
+
+               span {
+                    font-size: .8rem;
+
+               }
+
+               .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    font-size: 1.5rem;
+                    color: #0087ca;
+               }
+
+               .details {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+
+                    .definition {
+                         color: #a64e0e;
+                         font-size: 1rem;
+                    }
+
+                    .synonyms {
+                         color: #a60e0e;
+                         font-size: .9rem;
+                    }
+
+                    .examples {
+                         color: #756719;
+                         font-size: .9rem;
+                         display: flex;
+                         flex-direction: column;
+                    }
+               }
+
+          }
+          .error{
+               color: #d81111;
+          }
+     }
+
+}
