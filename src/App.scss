@@ -55,6 +55,7 @@ canvas {
           overflow: auto;
           max-height: 80vh;
           z-index: 2;
+           max-width: 95vw;
 
           &::-webkit-scrollbar {
                width: .8em;
