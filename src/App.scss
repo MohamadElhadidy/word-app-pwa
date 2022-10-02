@@ -24,9 +24,11 @@ canvas {
 .container {
      display: flex;
      height: 100vh;
+     height: 100wh;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+      z-index: -1;
 
      input {
           padding: 20px 30px;
